@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alphabet</title>
+    <link rel="stylesheet" href="styel.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="poppins-thin">
+    <main
+      class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center"
+    >
+      <!-- home  -->
+
+      <section id="home-screen"
+        class="home min-h-screen text-white flex justify-center items-center "
+      >
+        <div class="flex flex-col items-center gap-10">
+          <h1 class="text-8xl anton-regular uppercase">Alpha clash pro</h1>
+          <p>Unleash your keyboard kun g fu : press "inter" play</p>
+          <button onclick="play()" class="btn btn-success bg-white text-black">play Now</button>
+        </div>
+      </section>
+
+      <!-- play-graund -->
+
+      <section id="play-graund" class=" hidden">
+        <div class="flex flex-col items-center gap-20 pt-20">
+          <!-- screen  -->
+          <div
+            class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#ffffffb3]"
+          >
+            <div class="flex justify-center">
+              <p class="bg-[#2f2941] px-6 pb-4 rounded-b-xl text-white">
+                don'n watch keybrod while playing .....
+              </p>
+            </div>
+            <div class="flex justify-center items-center h-full">
+              <p id="crunt-alfabet" class="uppercase text-black text-9xl font-bold">Y</p>
+            </div>
+          </div>
+          <!-- keybrod st  -->
+          <div " >
+              <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd id="q" class="kbd">q</kbd>
+              <kbd id="w"  class="kbd">w</kbd>
+              <kbd  id="e" class="kbd">e</kbd>
+              <kbd  id="r" class="kbd">r</kbd>
+              <kbd  id="t"  class="kbd">t</kbd>
+              <kbd  id="y"  class="kbd">y</kbd>
+              <kbd id="u" class="kbd">u</kbd>
+              <kbd  id="i" class="kbd">i</kbd>
+              <kbd  id="o" class="kbd">o</kbd>
+              <kbd  id="p" class="kbd">p</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd  id="a" class="kbd">a</kbd>
+              <kbd  id="s" class="kbd">s</kbd>
+              <kbd  id="d" class="kbd">d</kbd>
+              <kbd  id="f" class="kbd">f</kbd>
+              <kbd  id="g" class="kbd">g</kbd>
+              <kbd  id="h" class="kbd">h</kbd>
+              <kbd  id="j" class="kbd">j</kbd>
+              <kbd id="k"  class="kbd">k</kbd>
+              <kbd  id="l" class="kbd">l</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd id="z"  class="kbd">z</kbd>
+              <kbd id="x"  class="kbd">x</kbd>
+              <kbd id="c"  class="kbd">c</kbd>
+              <kbd id="v"    class="kbd">v</kbd>
+              <kbd id="b"   class="kbd">b</kbd>
+              <kbd id="n"  class="kbd">n</kbd>
+              <kbd id="m"  class="kbd">m</kbd>
+              <kbd id="/"  class="kbd">/</kbd>
+            </div>
+          </div>
+          <!-- keybrod end  -->
+
+          <!-- life schor -->
+          <div class="flex justify-between w-2/3">
+            <button class="btn rounded-full bg-purple-500 text-white px-4">
+              Life
+              <img src="images/heart.svg" alt="" />
+              <span id="crunt-life">5</span>
+            </button>
+            <button class="btn rounded-full bg-purple-700 text-white px-4">
+              score
+              <img src="images/dollar.svg" alt="" />
+              <span id="crant-score">0</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- play end-->
+
+      <section id="final-score" class="flex justify-center items-center min-h-screen  hidden">
+        <div class="text-white text-center space-y-6 bg-[#ffffff33] p-4 rounded-lg">
+          <h1 class="text-9xl">GAME OVER</h1>
+          <h1 class="text-8xl">
+            <span id="game-score">Score :43</span>
+            <span></span>
+          </h1>
+          <button onclick="play()" class="btn">Play Again</button>
+          <p> Keep playing you will do well...  <br> <span class=" text-blue-500 text-3xl font-semibold">Game Designer :</span> <span class="text-green-700 text-3xl font-semibold">PR<span class="text-red-700 text-3xl font-medium">AN</span>TO</span></p>
+        </div>
+      </section>
+    </main>
+    <script src="jacascprit/newmodel.js"></script>
+    <script src="jacascprit/alpha.js"></script>
+  </body>
+</html>
